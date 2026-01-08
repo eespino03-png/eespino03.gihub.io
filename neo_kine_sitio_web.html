@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo Kine | Fisioterapia y Rehabilitación</title>
+  <meta name="description" content="Neo Kine – Clínica de fisioterapia y rehabilitación física en Querétaro. Atención profesional, valoración gratuita y servicio a domicilio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#9b5c8f;
+      --dark:#2e2a2d;
+      --light:#f7f5f6;
+      --gray:#6e6a6d;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Poppins',sans-serif;
+      color:var(--dark);
+      background:#ffffff;
+      line-height:1.6;
+    }
+    header{
+      background:linear-gradient(135deg,var(--primary),#b37aa8);
+      color:white;
+      padding:3rem 1.5rem;
+    }
+    .container{max-width:1100px;margin:auto}
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:2rem;
+      align-items:center;
+    }
+    .hero img{
+      max-width:320px;
+      width:100%;
+    }
+    h1{font-size:2.5rem;margin-bottom:1rem}
+    h2{font-size:2rem;margin-bottom:1rem}
+    h3{margin-bottom:.5rem}
+    p{margin-bottom:1rem;color:#f2f2f2}
+    .btn{
+      display:inline-block;
+      background:white;
+      color:var(--primary);
+      padding:.75rem 1.5rem;
+      border-radius:30px;
+      font-weight:500;
+      text-decoration:none;
+      transition:.3s;
+    }
+    .btn:hover{background:#f0e6ee}
+
+    section{padding:4rem 1.5rem}
+    .light{background:var(--light)}
+    .section-title{text-align:center;margin-bottom:3rem}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:2rem;
+    }
+    .card{
+      background:white;
+      border-radius:16px;
+      padding:2rem;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+    .card p{color:var(--gray)}
+
+    .prices li{list-style:none;margin-bottom:.5rem;color:var(--gray)}
+    .prices strong{color:var(--dark)}
+
+    .contact{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:2rem;
+    }
+    .contact p{color:var(--gray)}
+
+    footer{
+      background:var(--dark);
+      color:white;
+      padding:2rem 1.5rem;
+      text-align:center;
+    }
+    footer a{color:#e4c6db;text-decoration:none}
+
+    @media(max-width:768px){
+      .hero,.contact{grid-template-columns:1fr;text-align:center}
+      p{color:white}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container hero">
+    <div>
+      <h1>Neo Kine</h1>
+      <p>Fisioterapia y Rehabilitación Física enfocada en tu bienestar, recuperación y calidad de vida.</p>
+      <a href="#contacto" class="btn">Agenda tu valoración gratuita</a>
+    </div>
+    <div style="text-align:center">
+      <!-- Reemplazar src por el archivo del logo -->
+      <img src="logo-neokine.png" alt="Neo Kine Logo">
+    </div>
+  </div>
+</header>
+
+<section class="light">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nuestros Servicios</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Sesión de Fisioterapia</h3>
+        <p>Uso de agentes físicos como ultrasonido, láser, electroterapia y compresas, junto con ejercicio terapéutico personalizado.</p>
+        <ul class="prices">
+          <li><strong>Duración:</strong> 50–60 minutos</li>
+          <li><strong>Precio:</strong> $600 MXN</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Masajes Terapéuticos</h3>
+        <p>Tratamientos descontracturantes, de descarga muscular, relajantes y linfáticos.</p>
+        <ul class="prices">
+          <li>$400 – $900 MXN</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Tratamientos Especializados</h3>
+        <p>Atención en lesiones deportivas, pre y post operatorio, esguinces, fracturas, luxaciones, EVC y parálisis facial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>Paquetes</h2>
+      <p style="color:var(--gray)">Descuentos especiales a partir de 3 sesiones</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <ul class="prices">
+          <li><strong>3 sesiones:</strong> $1,620</li>
+          <li><strong>6 sesiones:</strong> $3,060</li>
+          <li><strong>8 sesiones:</strong> $3,840</li>
+          <li><strong>10 sesiones:</strong> $4,500</li>
+          <li><strong>12 sesiones:</strong> $5,040 (30% desc.)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p>Pago en efectivo, transferencia o tarjeta de crédito y débito. En pago de contado se aplica 10% de descuento adicional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="contacto">
+  <div class="container contact">
+    <div>
+      <h2>Contacto</h2>
+      <p><strong>Ubicación:</strong><br>De la Pradera 99, Col. del Prado, Santiago de Querétaro, Qro.</p>
+      <p><strong>Horarios:</strong><br>Lunes a Jueves 15:00 – 20:00<br>Viernes 15:00 – 19:00</p>
+    </div>
+    <div>
+      <p><strong>Teléfonos:</strong><br>442 112 3779<br>442 572 1235</p>
+      <p><strong>Instagram:</strong><br><a href="https://www.instagram.com/neokine1" target="_blank">@neokine1</a></p>
+      <p>Valoración inicial gratuita y servicio a domicilio.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Neo Kine – Fisioterapia & Bienestar</p>
+</footer>
+
+</body>
+</html>
